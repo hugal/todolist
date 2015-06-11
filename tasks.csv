@@ -1,0 +1,11 @@
+0,"another task","this is a task with a longer description. This will be useful to test the table style when a task has a long description.",2015-12-18,high
+1,late,"this task is late",2015-02-10,high
+6,bonus,"Possibilité de dire qu'une tâche est terminée.",2015-06-11,normal
+7,bonus,"Ajouter des messages d'erreurs à côté des input et select en javascript lorsqu'il y a une erreur (champ vide par exemple). Ne soumettre le formulaire que si le formulaire est valide",2015-06-11,normal
+8,bonus,"Ajouter un message d'alerte lorsqu'on supprime une ou des tâches afin d'avertir que l'action est irréversible. Demander confirmation",2015-06-11,normal
+9,bonus,"Rajouter la possibilité de filtrer les tâches par priorités ou par date",2015-06-11,normal
+10,bonus,"Créer un petit moteur de rechercher afin de rechercher une tâche par rapport à son titre",2015-06-11,normal
+12,bonus,"Afficher le nombre de tâche à faire aujourd'hui. Afficher un curseur permettant d'afficher le pourcentage de tâches finies aujourd'hui. Ex: 10 tâches à faire dans la journée avec 5 réalisées : 50% réalisé",2015-06-11,normal
+13,todo,"ajouter la possibilite de changer la priorite",2015-06-11,normal
+14,session,"utiliser les sessions pour passer des messages flash",2015-06-14,normal
+15,bleb,bleb,2015-06-17,minor

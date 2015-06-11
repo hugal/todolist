@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TODO List</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<?php 
+		// $tasks = listTasks();
+		// var_dump($tasks) ?>
+	<h1>Todo List</h1>
+	<p class="message">
+		<?php if ($addtask) {
+			echo "task added successfully<br>";
+		}
+		echo $error;
+		?>
+	</p>
+	<h2><a href="index.php?new=true">Add a Task</a></h2>
+	<?php if($new){
+		include 'taskform.phtml';
+	} ?>
+
+	<h2>Current Tasks
+		<?php
+			$tasks = listTasks();
+			$nbTasks = count($tasks);
+			if ($nbTasks > 0) {
+				echo " : ".$nbTasks;
+			}
+		?>
+	</h2>
+
+	<p>
+		<?php 
+			if ($sort == 'title') {
+				taskToTable(sortByTitle($tasks));
+			} else if ($sort == 'priority') {
+				taskToTable(listTasks());
+			} else{
+				taskToTable(sortByDate($tasks));
+			}
+		?>
+	</p>
+	<p>
+		<a id='clear' href="index.php?clear=true">delete all tasks</a> 
+		<a id='undo' href="index.php?undo=true">undo last action</a>
+	</p>
+	<script src='js/app.js'></script>
+</body>
+</html>
